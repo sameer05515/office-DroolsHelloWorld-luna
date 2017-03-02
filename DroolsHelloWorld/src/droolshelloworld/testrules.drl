@@ -1,0 +1,11 @@
+# Drools 5.1 – Hello World Example
+# Author: Akhouri Vishal Sinha
+
+package droolshelloworld
+
+rule “Hello World”
+when
+message:Message (type==’Hello’)
+then
+System.out.println(“Hello World, Drools!”);
+end
